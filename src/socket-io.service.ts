@@ -1,10 +1,10 @@
-import { Injectable, EventEmitter, Inject } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/share';
 
 import * as io from 'socket.io-client';
 
-import { SocketIoConfig } from './socketIoConfig';
+import { SocketIoConfig } from './socket-io-config';
 import { SOCKET_CONFIG_TOKEN } from './socket-io.module';
 
 @Injectable()

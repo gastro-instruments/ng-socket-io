@@ -1,7 +1,7 @@
 import { NgModule, ModuleWithProviders, InjectionToken } from '@angular/core';
 
 import { WrappedSocket } from './socket-io.service';
-import { SocketIoConfig } from './socketIoConfig';
+import { SocketIoConfig } from './socket-io-config';
 
 /** Socket factory */
 export function SocketFactory(config: SocketIoConfig) {
