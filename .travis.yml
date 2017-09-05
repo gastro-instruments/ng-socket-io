@@ -1,7 +1,6 @@
-before_script:
-  - npm install
-script:
-  - tsc; npm test
+cache: yarn
+addons:
+  chrome: stable
 language: node_js
 node_js:
-  - "6"
+  - "8"
