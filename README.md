@@ -1,12 +1,10 @@
 # ng-socket-io
-[![Build Status](https://travis-ci.org/bougarfaoui/ng-socket-io.svg?branch=master)](https://travis-ci.org/bougarfaoui/ng-socket-io)
-[![npm version](https://badge.fury.io/js/ng-socket-io.svg)](https://www.npmjs.com/package/ng-socket-io)
-[![npm downloads](https://img.shields.io/badge/Downloads-1300%2Fmonth-brightgreen.svg)](https://github.com/bougarfaoui/ng-socket-io)
+[![Build Status](https://travis-ci.org/gastro-instruments/ng-socket-io.svg?branch=master)](https://travis-ci.org/bougarfaoui/ng-socket-io)
 
-[Socket.IO](http://socket.io/) module for Angular 2 and 4
+[Socket.IO](http://socket.io/) module for Angular
 
 ## Install
-``` npm install ng-socket-io ```
+```yarn add @gi/ng-socket-io```
 
 ## How to use
 
@@ -24,7 +22,7 @@ const config: SocketIoConfig = { url: 'http://localhost:8988', options: {} };
   ],
   imports: [
     BrowserModule,
-    SocketIoModule.forRoot(config) 
+    SocketIoModule.forRoot(config)
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -52,7 +50,7 @@ export class ChatService {
     sendMessage(msg: string){
         this.socket.emit("message", msg);
     }
-    
+
     getMessage() {
         return this.socket
             .fromEvent("message")
@@ -99,7 +97,7 @@ export class SocketTwo extends Socket {
   bootstrap: [/** AppComponent **/]
 })
 export class AppModule { }
- 
+
 ```
 
 Now you can inject ```SocketOne```, ```SocketTwo``` in any other services and / or components.
@@ -163,7 +161,7 @@ class ChatService {
             .fromEvent<any>("message")
             .map(data => data.msg );
     }
-    
+
     close() {
       this.socket.disconnect()
     }
@@ -176,7 +174,7 @@ class ChatService {
   ],
   imports: [
     BrowserModule,
-    SocketIoModule.forRoot(config) 
+    SocketIoModule.forRoot(config)
   ],
   providers: [ChatService],
   bootstrap: [AppComponent]
