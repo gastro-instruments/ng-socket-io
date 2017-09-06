@@ -5,7 +5,12 @@ module.exports = function(config) {
 	config.set({
 		basePath: './',
 		frameworks: ['jasmine', 'karma-typescript'],
-		files: [{ pattern: 'src/**/*.ts' }],
+		files: [
+			'src/socket-io.service.spec.ts',
+			{
+				pattern: 'src/**/*.ts'
+			}
+		],
 		preprocessors: {
 			'src/**/*.ts': ['karma-typescript']
 		},
