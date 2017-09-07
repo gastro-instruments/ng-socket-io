@@ -6,10 +6,10 @@
 		"name": "Bougarfaoui El Houcine",
 		"email": "bougarfaoui.el.houcine@gmail.com"
 	},
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "tags": ["angular", "socket.io", "typescript"],
-  "readme": "README.md",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"tags": ["angular", "socket.io", "typescript"],
+	"readme": "README.md",
 	"scripts": {
 		"watch": "./node_modules/.bin/karma start",
 		"prepublishOnly": "yarn aot",
@@ -29,15 +29,16 @@
 		"socket.io-client": "^2.0.3"
 	},
 	"devDependencies": {
-		"@angular/core": "^4.3.5",
 		"@angular/compiler": "^4.3.5",
 		"@angular/compiler-cli": "^4.3.5",
+		"@angular/core": "^4.3.5",
 		"@angular/platform-server": "^4.3.5",
 		"@ngrx/store": "^4.0.3",
 		"@types/jasmine": "^2.5.53",
 		"@types/jasminewd2": "^2.0.2",
 		"@types/node": "^8.0.24",
 		"@types/should": "^8.3.0",
+		"bufferutil": "^1.0.0",
 		"jasmine-core": "^2.7.0",
 		"jasmine-spec-reporter": "^4.2.1",
 		"karma": "^1.7.0",
@@ -54,6 +55,7 @@
 		"ts-node": "^3.3.0",
 		"tslint": "^5.6.0",
 		"typescript": "^2.4.2",
+		"utf-8-validate": "^2.0.0",
 		"zone.js": "^0.8.16"
 	}
 }
