@@ -25,7 +25,6 @@
 		"url": "https://github.com/gastro-instruments/ng-socket-io"
 	},
 	"dependencies": {
-		"@types/socket.io-client": "^1.4.29",
 		"socket.io-client": "^2.0.3"
 	},
 	"devDependencies": {
@@ -33,11 +32,10 @@
 		"@angular/compiler-cli": "^4.3.5",
 		"@angular/core": "^4.3.5",
 		"@angular/platform-server": "^4.3.5",
-		"@ngrx/store": "^4.0.3",
 		"@types/jasmine": "^2.5.53",
 		"@types/jasminewd2": "^2.0.2",
 		"@types/node": "^8.0.24",
-		"@types/should": "^8.3.0",
+		"@types/socket.io-client": "^1.4.29",
 		"bufferutil": "^1.0.0",
 		"jasmine-core": "^2.7.0",
 		"jasmine-spec-reporter": "^4.2.1",
@@ -49,9 +47,7 @@
 		"karma-jasmine": "^1.1.0",
 		"karma-jasmine-html-reporter": "^0.2.2",
 		"karma-typescript": "^3.0.5",
-		"normalizr": "^3.2.3",
 		"rxjs": "^5.4.3",
-		"should": "^11.2.1",
 		"ts-node": "^3.3.0",
 		"tslint": "^5.6.0",
 		"typedoc": "^0.8.0",
