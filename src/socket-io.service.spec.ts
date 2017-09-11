@@ -43,6 +43,15 @@ describe('Service', () => {
 			socket.connect();
 			expect(spy).toHaveBeenCalledWith();
 		});
+
+		it('should take arguments and reconnect with them', () => {
+			expect(socket.ioSocket.io.uri).toEqual(url);
+			const spy = spyOn(socket.ioSocket, 'disconnect');
+			const config = { url: 'http://localhost:4000' };
+			socket.connect(config);
+			expect(spy).toHaveBeenCalledWith();
+			expect(socket.ioSocket.io.uri).toEqual(config.url);
+		});
 	});
 
 	describe('disconnect', () => {

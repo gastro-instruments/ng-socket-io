@@ -26,7 +26,11 @@ export class WrappedSocket {
 		this.ioSocket.once(eventName, callback);
 	}
 
-	connect() {
+	connect(config?: SocketIoConfig) {
+		if (config) {
+			this.ioSocket.disconnect();
+			this.ioSocket = io(config.url, config.options || {});
+		}
 		return this.ioSocket.connect();
 	}
 
