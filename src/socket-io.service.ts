@@ -1,7 +1,6 @@
-import { Injectable, Inject } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/share';
-
+import { Inject, Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { share } from 'rxjs/operators';
 import * as io from 'socket.io-client';
 
 import { SocketIoConfig } from './socket-io-config';
@@ -61,7 +60,7 @@ export class WrappedSocket {
 				if (this.subscribersCounter === 1)
 					this.ioSocket.removeListener(eventName);
 			};
-		}).share();
+		}).pipe(share());
 	}
 
 	/* Creates a Promise for a one-time event */

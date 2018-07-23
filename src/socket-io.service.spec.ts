@@ -1,6 +1,6 @@
 import 'reflect-metadata';
 
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs';
 
 import { WrappedSocket as IOSocket } from './socket-io.service';
 
