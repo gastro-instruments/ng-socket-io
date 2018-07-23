@@ -1,7 +1,7 @@
 # ng-socket-io
 [![Build Status](https://travis-ci.org/gastro-instruments/ng-socket-io.svg?branch=master)](https://travis-ci.org/gastro-instruments/ng-socket-io)
 
-[Socket.IO](http://socket.io/) module for Angular
+[Socket.IO](http://socket.io/) module for Angular 6
 
 ## Install
 ```yarn add @gi/ng-socket-io```
